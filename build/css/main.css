@@ -45,6 +45,7 @@
     padding: 15px 30px;
     background-color: whitesmoke;
     cursor: pointer;
+    
 }
 
 .btn-tour:hover{
@@ -52,7 +53,7 @@
 }
 
 .btn-tour:active{
-    box-shadow: 0px 0px 10px rgb(176, 175, 175, 0.9);
+    box-shadow: 0px 0px 10px rgb(176, 175, 175,);
 }
 
 .tour-btn-text{
