@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cycling tour</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="photo/logo.png" alt="logo" style="width: 200px;">
-        <span class="icon-nav-container">icons</span>
+        <div class="message">
+            <h2>SUBSCRIBE & BE THE FIRST TO RECEIVE SPECIAL OFFERS</h2>
+        </div>
+        <div class="logo-container">
+            <a href="#homepage"><img class="logo" src="photo/logo.png" alt="logo" style="width: 200px;"></a>
+            <!--<span class="icon-nav-container">icons</span>-->
+        </div>
         <nav class="navigation">
             <ul>
                 <li class="list-nav-item"> <a class="list-nav-text" href="#">Home</a></li>
                 <li class="list-nav-item"> <a class="list-nav-text" href="#">About us</a></li>
-                <li class="list-nav-item"> <a class="list-nav-text" href="#">Cycling Tours</a></li>
+                <li class="list-nav-item"> <a class="list-nav-text" href="#">Cycling Tours <span class="material-symbols-outlined">expand_more</span></a></li>
                 <li class="list-nav-item"> <a class="list-nav-text" href="#">Lifestyle</a></li>
                 <li class="list-nav-item"> <a class="list-nav-text" href="#">Outlet</a></li>
                 <li class="list-nav-item"> <a class="list-nav-text" href="#">Stories</a></li>
@@ -23,16 +35,19 @@
         </nav>
     </header>
     <main>
-        <section>
-            <img src="" alt="">
-            <button class="btn-tour"><a class="tour-btn-text" href="#">Tour overview</a></button>
-        </section>
-        <section>
-            <h2>Après Vélo Cycling Tours</h2>
-            <p>If you love bikes – and you’re looking for a memorable holiday that leaves you not just a fitter, but also a smarter cyclist – then this exclusive camp at the UCI World Cycling Centre in Aigle, Switzerland is going to blow you away. Founded in 2002, the UCI World Cycling Centre (WCC) is a training centre for promising athletes from developing nations. With alumni like Chris Froome, it’s no wonder that more than 100 athletes a year, across Road, BMX racing, MTB and Track cycling, live and train at the WCC. This once in a lifetime trip takes you behind-the-scenes of this incredible centre providing unprecedented access to the facility, staff, coaches and riders.</p>
+        <section class="intro">
+            <div class="container-intro">
+                <img src="" alt="">
+                <button class="btn-tour"><a class="tour-btn-text" href="#">Tour overview</a></button>
+            </div>
+            <p>Après Vélo is a lifestyle brand for those who want to uniquely express their passion for cycling through adventure, travel and fashion.</p>
         </section>
         <section>
             <h2>Live Sports Everyday</h2>
+            <p>If you love bikes – and you’re looking for a memorable holiday that leaves you not just a fitter, but also a smarter cyclist – then this exclusive camp at the UCI World Cycling Centre in Aigle, Switzerland is going to blow you away. Founded in 2002, the UCI World Cycling Centre (WCC) is a training centre for promising athletes from developing nations. With alumni like Chris Froome, it’s no wonder that more than 100 athletes a year, across Road, BMX racing, MTB and Track cycling, live and train at the WCC. This once in a lifetime trip takes you behind-the-scenes of this incredible centre providing unprecedented access to the facility, staff, coaches and riders.</p>
+        </section>
+        <section>
+            <h2>Après Vélo Cycling Tours</h2>
             <p>Our goal is to offer a collection of unique Cycling Tours, with a twist...a point of difference, that provides our guests with unforgettable lifetime experiences. <br> Our niche cycling tours are not just about the bike. They are about the Après Vélo lifestyle and creating fond memories that will last forever.</p>
             <div>
                 <img src="" alt="">
@@ -98,7 +113,7 @@
                     <img class="img-inst" src="photo/photo inst/7.jpg" alt="7">
                     <img class="img-inst" src="photo/photo inst/8.jpg" alt="8">
                 </div>
-                <div>
+                <div class="container-subscribe">
                     <h2>SUBSCRIBE & BE THE FIRST TO RECEIVE SPECIAL OFFERS</h2>
                     <button class="btn-subscribe">Subscribe Now</button>
                     <div>icons</div>
@@ -110,8 +125,10 @@
         <div class="footer-container">
             <div>
                 <h3>Contact Us</h3>
-                <p>cyclingnuts@apresvelo.com</p>
-                <p>Ask us a question!</p>
+                <ul>
+                    <li class="list-foot-item"><a class="list-foot-text" href="#">cyclingnuts@apresvelo.com</a></li>
+                    <li class="list-foot-item list-foot-text">Ask us a question!</li>
+                </ul>
             </div>
             <div>
                 <h3>Customer Service</h3>
@@ -137,12 +154,12 @@
                     <li class="list-foot-item"><a class="list-foot-text" href="#">Terms & Conditions</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="covid-wrap">
                 <h3>COVID Shipping Alert</h3>
                 <p>Based upon the COVID outbreak in Australia, we are unfortunately experiencing some delivery delays due to warehousing logistics, reduced flights, social distancing in postal facilities and increased parcel volumes. We are ensuring all orders are dispatched as soon as possible. However, there may be delays with delivery based upon the reasons explained as well as any additional restrictions placed by postal services in your region.</p>
             </div>
         </div>
-        <p>Copyright © 2023 Après Vélo EU. All rights reserved.</p>
+        <p class="end">Copyright © 2023 Après Vélo EU. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -5,10 +5,40 @@
 }
 
 /*HEADER*/
-.icon-nav-container{
+.message{
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding: 30px 150px;
+}
+
+.message h2{
+    color: #D0212E;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+    line-height: 50px;
+    width: auto;
+    text-align: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 5px 70px;
+}
+
+.logo{
+    display: block;
+    cursor: pointer;
+}
+
+/*.icon-nav-container{
     display: flex;
     justify-content: end;
-}
+    flex-direction: row;
+    padding-top: 40px;
+}*/
 
 .navigation{
     display: flex;
@@ -17,28 +47,42 @@
     overflow: hidden;
     box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.291);
     background-color: #080808;
-    font-size: 18px;
 }
 
 .list-nav-item{
     display: inline-block;
     padding: 30px 10% 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     list-style: none;
+    text-align: center;
 }
 
 .list-nav-text{
     text-decoration: none;
     color: whitesmoke;
     text-transform: uppercase;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
 }
 
 .list-nav-item:hover{
     background-color: rgba(59, 59, 59, 0.602);
 }
 
+.material-symbols-outlined{
+    font-size: 28px;
+    font-weight: 700;
+}
+
 /*MAIN*/
+.container-intro{
+    background-image: url(/build/photo/bg\ main.png) no-repeat;
+    
+}
+
 .btn-tour{
     border: none;
     border-radius: 5px;
@@ -52,31 +96,9 @@
     opacity: 0.7;
 }
 
-.btn-tour:active{
-    box-shadow: 0px 0px 10px rgb(176, 175, 175,);
-}
-
 .tour-btn-text{
     text-decoration: none;
     color: #1e1e1e83;
-}
-
-.btn-subscribe{
-    border: none;
-    border-radius: 5px;
-    padding: 25px 85px;
-    background-color: #080808;
-    color: whitesmoke;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-.btn-subscribe:hover{
-    text-shadow: 0px 0px 10px rgb(218, 217, 217);
-}
-
-.btn-subscribe:active{
-    box-shadow: 0px 0px 10px #3b3b3b;
 }
 
 .img-inst-container{
@@ -95,23 +117,102 @@
     opacity: 0.8;
 }
 
-/*FOOTER*/
-footer{
+
+/*Subscribe*/
+.container-subscribe{
+    background: #3BA8C5;
+    text-align: center;
+    padding: 50px 150px;
+}
+.container-subscribe h2{
+    padding-bottom: 25px;
+    color: #FFFFFF;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 50px;
+    width: auto;
+    text-align: center;
+}
+
+.btn-subscribe{
+    border: none;
+    border-radius: 5px;
+    padding: 25px 85px;
+    margin-bottom: 25px;
     background-color: #080808;
     color: whitesmoke;
-    padding: 70px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.btn-subscribe:hover{
+    text-shadow: 0px 0px 10px rgb(218, 217, 217);
+}
+
+.btn-subscribe:active{
+    box-shadow: 0px 0px 10px #3b3b3b;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgba(28, 28, 28, 1);
+    color: whitesmoke;
+    padding: 50px;
+    font-family: 'Karla';
+    font-style: normal;
 }
 
 .footer-container{
     display: flex;
-    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 15px 150px;
+}
+
+.footer-container div{
+    width: auto;
+    text-align: left;
+}
+
+.covid-wrap{
+    max-width: 800px;
+}
+
+.footer-container h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 28px;
+    border-bottom: 1px solid #393939;
+    padding: 0px 191px 10px 0px;
+}
+
+.footer-container ul, .footer-container p{
+    padding-top: 20px;
 }
 
 .list-foot-item{
     list-style: none;
+    padding: 5px;
 }
 
-.list-foot-text{
-    color: whitesmoke;
+.list-foot-text, .footer-container p{
+    color: #ffffffbc;
     text-decoration: none;
+    font-size: 26px;
+    line-height: 38px;
+}
+
+.end{
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #393939;
+    padding-top: 50px;
+    font-size: 18px;
 }
