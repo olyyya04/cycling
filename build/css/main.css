@@ -78,9 +78,36 @@
 }
 
 /*MAIN*/
+/*CONTAINERS*/
+.instagram-container, .comming-soon-container, .tours-text-container, .about-container{
+    margin-top: 60px;
+}
+
+/*HEADERS*/
+.instagram-header, .comming-soon-container h2, .tours-text-container h2, .about-container h2{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    margin: 20px;
+}
+
+/*PARAGRAPHS*/
+.comming-soon-container p, .tours-text-container p, .about-container p{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1e1e1eb6;
+    text-align: center;
+    padding: 10px 150px 30px 150px;
+}
+
+
 .container-intro{
     background-image: url(/build/photo/bg\ main.png) no-repeat;
-    
 }
 
 .btn-tour{
@@ -101,15 +128,15 @@
     color: #1e1e1e83;
 }
 
-.instagram-header{
-    font-family: 'Karla';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    text-align: center;
-    margin: 60px;
+
+/*Comming soon section*/
+.image-comming{
+    position: relative;
+    width: 100%;
+
 }
 
+/*Instagram section*/
 .img-inst-container{
     margin: 40px auto;
     display: flex;
