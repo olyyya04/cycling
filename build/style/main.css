@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+.icon-nav-container{
+    display: flex;
+    justify-content: end;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(59, 59, 59, 0.291);
+    background-color: #080808;
+    font-size: 28px;
+}
+
+.list-nav-item{
+    display: inline-block;
+    padding: 30px 10% 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.list-nav-text{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.list-nav-item:hover{
+    background-color: rgba(59, 59, 59, 0.602);
+}
+
+/*MAIN*/
+.btn-tour{
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.btn-tour:hover{
+    opacity: 0.7;
+}
+
+.btn-tour:active{
+    box-shadow: 0px 0px 10px rgb(153, 150, 150);
+}
+
+.tour-btn-text{
+    text-decoration: none;
+    color: #1e1e1e83;
+}
+
+.btn-subscribe{
+    border: none;
+    border-radius: 5px;
+    padding: 25px 85px;
+    background-color: #080808;
+    color: whitesmoke;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.btn-subscribe:hover{
+    text-shadow: 0px 0px 10px rgb(218, 217, 217);
+}
+
+.btn-subscribe:active{
+    box-shadow: 0px 0px 10px #3b3b3b;
+}
+
+.img-inst-container{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.img-inst{
+    width: 400px;
+    height: 400px;
+    margin: 0px;
+}
+
+.img-inst:hover{
+    opacity: 0.8;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #080808;
+    color: whitesmoke;
+    padding: 70px;
+}
+
+.footer-container{
+    display: flex;
+    gap: 70px;
+}
+
+.list-foot-item{
+    list-style: none;
+}
+
+.list-foot-text{
+    color: whitesmoke;
+    text-decoration: none;
+}
