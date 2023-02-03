@@ -215,26 +215,51 @@
 
 .tours-container img{
     width: 500px;
-    opacity: 1;
+    opacity: 0.9;
     display: block;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
 
-/*.middle{
-    display: block;
-    justify-content: space-around;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}*/
+.description{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 30px;
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, purple, orange) border-box;
+    border: 5px solid transparent;
+    border-top: none;
+}
+
+.description h4{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    background-image: linear-gradient(60deg, #FFB03A, purple);
+    background-clip: text;
+    color: transparent;
+}
 
 .tours-container:hover  img{
-    opacity: 0.8;
+    opacity: 1;
     transition: ease-in-out 400ms;
+}
+
+.tours-container:hover .description{
+    background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, orange, purple) border-box;
+    transition: repeat ease 3s;
+}
+
+.tours-container:hover .description h4{
+    background-image: linear-gradient(60deg, purple, #FFB03A);
+    background-clip: text;
+    color: transparent;
 }
 
 /*.tours-container:hover .middle{
